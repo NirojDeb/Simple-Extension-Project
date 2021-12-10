@@ -1,0 +1,58 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://saketademo3.sharepoint.com/sites/IntranetCustomizationMerge",
+      "customActions": {
+        "1498db1d-6ab4-4248-b1ba-625db7565415": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "appCustomizerTest": {
+      "pageUrl": "https://saketademo3.sharepoint.com/sites/IntranetCustomizationMerge",
+      "customActions": {
+        "1498db1d-6ab4-4248-b1ba-625db7565415": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "njField": {
+      "pageUrl": "https://saketademo3.sharepoint.com/sites/IntranetCustomizationMerge/Lists/Orders/AllItems.aspx",
+      "fieldCustomizers": {
+        "Percent": {
+          "id": "ea44e38f-4df5-4470-8c2a-db2dd331ba66",
+          "properties": {
+            "sampleText": "Value"
+          }
+        },
+        "Hello": {
+          "id": "ea44e38f-4df5-4470-8c2a-db2dd331ba66",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    },
+    "commandSet": {
+      "pageUrl": "https://saketademo3.sharepoint.com/sites/IntranetCustomizationMerge/Lists/Orders/AllItems.aspx",
+      "customActions": {
+        "808f6866-eec5-4089-8d3c-41392c5d4590": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    }
+  }
+}
